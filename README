@@ -1,0 +1,15 @@
+Automatically generates *correct* DNS SSHFP records, unlike ssh-keygen (even with patch).
+
+Recommended usage model:
+
+1. Put mksshfp on server.
+2. Run ./mksshfp.sh etc
+3. (Optional) If necessary, prepend each line with "host. 86400 IN SSHFP" or similar.
+4. Copy results into DNS provider.
+
+Alternatively, you can put mksshfp on your regular computer:
+
+1. Put mksshfp on computer.
+2. Run ./mksshfp.sh -
+3. Paste /etc/ssh/ssh_host_*_key.pub when prompted.
+4. Follow "Recommended usage model" starting from step 3.
