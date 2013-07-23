@@ -13,3 +13,5 @@ Alternatively, you can put mksshfp on your regular computer:
 2. Run ./mksshfp.sh -
 3. Paste /etc/ssh/ssh_host_*_key.pub when prompted.
 4. Follow "Recommended usage model" starting from step 3.
+
+Records tested with OpenSSH 5.9p1-hpn13v11.
